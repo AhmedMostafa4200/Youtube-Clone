@@ -138,6 +138,10 @@ button {
   background-color: unset;
   border: none;
 }
-// img {
-//   max-width: 100%;
-// }
+
+p,
+h3,
+div {
+  max-width: 100%;
+  word-break: break-all;
+}

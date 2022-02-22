@@ -6,9 +6,12 @@ function Search() {
   return (
     <header className="search-container">
       <YoutubeLogo />
-      <div className="search-container__input">
+      <form
+        onSubmit={e => e.preventDefault()}
+        className="search-container__input"
+      >
         <Input />
-      </div>
+      </form>
     </header>
   );
 }

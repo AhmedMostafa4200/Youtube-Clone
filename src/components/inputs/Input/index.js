@@ -1,12 +1,12 @@
 import { useState } from "react";
 
 import { useDispatch } from "react-redux";
+import getSearch from "../../../redux/actions/InputAction";
 
 import Delete from "../../resources/icons/Delete";
 import Search from "../../resources/icons/Search";
 
 import "./Input.scss";
-import getSearch from "../../../redux/actions/InputAction";
 
 function Input() {
   const dispatch = useDispatch();
@@ -14,6 +14,7 @@ function Input() {
   const [search, setSearch] = useState("");
 
   const handleSearch = e => {
+    e.preventDefault();
     setSearch(e.target.value);
   };
 
@@ -46,7 +47,7 @@ function Input() {
         )}
       </div>
       <button
-        type="button"
+        type="submit"
         className="search__icon"
         onClick={handleAddSearchKey}
       >
