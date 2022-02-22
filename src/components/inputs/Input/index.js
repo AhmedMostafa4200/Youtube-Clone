@@ -6,14 +6,14 @@ import Delete from "../../resources/icons/Delete";
 import Search from "../../resources/icons/Search";
 
 import "./Input.scss";
-import { getSearch } from "../../../redux/actions/InputAction";
+import getSearch from "../../../redux/actions/InputAction";
 
-const Input = () => {
+function Input() {
   const dispatch = useDispatch();
 
   const [search, setSearch] = useState("");
 
-  const handleSearch = (e) => {
+  const handleSearch = e => {
     setSearch(e.target.value);
   };
 
@@ -36,13 +36,13 @@ const Input = () => {
           className="search__input"
         />
         {search && (
-          <div
-            role="button"
+          <button
+            type="button"
             className="search__delete"
             onClick={handleClearSearch}
           >
             <Delete />
-          </div>
+          </button>
         )}
       </div>
       <button
@@ -54,6 +54,6 @@ const Input = () => {
       </button>
     </div>
   );
-};
+}
 
 export default Input;

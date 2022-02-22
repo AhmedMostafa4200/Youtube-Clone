@@ -3,8 +3,8 @@ import { useState } from "react";
 export default function useWindowWidObserv() {
   const [windowWidth, setWindowWidth] = useState(0);
 
-  const windowObserver = new ResizeObserver((entries) => {
-    entries.forEach((entry) => {
+  const windowObserver = new ResizeObserver(entries => {
+    entries.forEach(entry => {
       setWindowWidth(entry.contentRect.width);
     });
   });

@@ -4,7 +4,7 @@ const initialState = {
   searchKey: "",
 };
 
-export default function (prevState = initialState, { type, payload }) {
+export default function (prevState = initialState, { type, payload } = {}) {
   switch (type) {
     case TYPES.SEARCH_KEY:
       return {

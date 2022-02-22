@@ -2,7 +2,7 @@ import Input from "../inputs/Input";
 import YoutubeLogo from "../resources/icons/YoutubeLogo";
 import "./Search.scss";
 
-const Search = () => {
+function Search() {
   return (
     <header className="search-container">
       <YoutubeLogo />
@@ -11,6 +11,6 @@ const Search = () => {
       </div>
     </header>
   );
-};
+}
 
 export default Search;

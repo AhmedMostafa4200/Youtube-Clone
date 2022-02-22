@@ -1,7 +1,7 @@
 import useWindowWidObserv from "../../../hooks/useWindowWidObserv";
 import "./Media.scss";
 
-const Media = ({ mediaData }) => {
+function Media({ mediaData }) {
   const windowWidth = useWindowWidObserv();
   return (
     <div className="media">
@@ -30,6 +30,6 @@ const Media = ({ mediaData }) => {
       </div>
     </div>
   );
-};
+}
 
 export default Media;

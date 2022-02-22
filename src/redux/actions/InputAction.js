@@ -1,6 +1,6 @@
 import TYPES from "../reducers/types";
 
-export function getSearch(searchKey) {
+export default function getSearch(searchKey) {
   return {
     payload: searchKey,
     type: TYPES.SEARCH_KEY,

@@ -1,6 +1,6 @@
 import useWindowWidObserv from "../../../hooks/useWindowWidObserv";
 
-const Search = () => {
+function Search() {
   const windowWidth = useWindowWidObserv();
   return (
     <div>
@@ -26,6 +26,6 @@ const Search = () => {
       </svg>
     </div>
   );
-};
+}
 
 export default Search;

@@ -37,7 +37,7 @@
     background-color: $danger-color;
     @media (min-width: 560px) {
       border: 0.1rem solid $primary-color-500;
-      background-color: $white-color;
+      background-color: $primary-color-500;
     }
   }
 }

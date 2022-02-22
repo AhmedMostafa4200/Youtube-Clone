@@ -1,4 +1,4 @@
-const Delete = () => {
+function Delete() {
   return (
     <div>
       <svg
@@ -22,6 +22,6 @@ const Delete = () => {
       </svg>
     </div>
   );
-};
+}
 
 export default Delete;
