@@ -1,0 +1,17 @@
+@import "../../sass/abstract/variables";
+@import "../../sass/abstract/mixins";
+
+.search-container {
+  @include flex-center;
+  column-gap: 0;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  background-color: $danger-color;
+  @media (min-width: 560px) {
+    column-gap: 10rem;
+    background-color: $white-color;
+  }
+  &__input {
+    width: 56rem;
+  }
+}

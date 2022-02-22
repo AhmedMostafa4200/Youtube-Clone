@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Search from "./components/Search";
+import Media from "./components/media/Media/index";
+import { Provider } from "react-redux";
+import store from "./store";
+import MediaList from "./components/media/MediaList";
 
 function App() {
+  const windowObserver = new ResizeObserver((entries) => {
+    entries.forEach((entry) => {
+      console.log(entry.contentRect.width);
+    });
+  });
+
+  const bodyWidth = document.querySelector("body");
+  windowObserver.observe(bodyWidth);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
+        <Search />
+        <MediaList />
+      </div>
+    </Provider>
   );
 }
 
