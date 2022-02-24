@@ -1,7 +1,8 @@
 import { Provider } from "react-redux";
-import Search from "./components/Search";
-// import Media from "./components/media/Media";
+
 import store from "./store";
+
+import Search from "./components/Search";
 import MediaList from "./components/media/MediaList";
 
 function App() {

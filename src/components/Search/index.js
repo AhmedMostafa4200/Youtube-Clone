@@ -8,7 +8,7 @@ function Search() {
       <YoutubeLogo />
       <form
         onSubmit={e => e.preventDefault()}
-        className="search-container__input"
+        className="search-container__form"
       >
         <Input />
       </form>

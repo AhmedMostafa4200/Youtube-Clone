@@ -5,6 +5,10 @@ body {
 }
 
 .app-container {
+  @media (min-width: 560px) {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
   max-width: 1440px;
   margin: 0 auto;
   display: flex;

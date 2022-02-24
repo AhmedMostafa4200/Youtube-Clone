@@ -3,23 +3,15 @@
 
 .search-container {
   @include flex-center;
-  justify-content: flex-start;
-  // width: 100%;
+  max-width: 76.8rem;
+  width: 100%;
   column-gap: 0;
-  padding-right: 1rem;
-  padding-left: 1rem;
   background-color: $danger-color;
   @media (min-width: 560px) {
     column-gap: 10rem;
     background-color: $white-color;
   }
-  &__input {
-    width: unset;
-    @media (min-width: 560px) {
-      width: 40rem;
-    }
-    @media (min-width: 768px) {
-      width: 56rem;
-    }
+  &__form {
+    width: 100%;
   }
 }

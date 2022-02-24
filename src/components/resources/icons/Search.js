@@ -12,8 +12,8 @@ function Search() {
         style={{
           pointerEvents: "none",
           display: "block",
-          width: "100%",
-          height: "100%",
+          width: "2.5rem",
+          height: "2.5rem",
         }}
       >
         <g className="style-scope yt-icon">
